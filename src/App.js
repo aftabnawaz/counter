@@ -1,17 +1,39 @@
 import React, { useState } from 'react';
-import Button from './App.css';
+//import counterButton from './App.css';
 import divButton from './App.css';
+//import divDisplay from './App.css';
+
+function Counter(props) {
+ 
+  const handleClick = () => {};
+   return (
+     <div className="divButton">
+       <button className = "counterButton" onClick={props.onclickFunction}>
+         +1
+       </button>
+       </div>
+   );
+}
+
+function Display(props) {
+  return (
+    <div className="divDisplay">
+      {props.message}
+    </div>
+  )
+}
 
 function App() {
- const [counter, setCounter] = useState(0);
- const handleClick = () => setCounter(counter+1);
+  const [counter, setCounter] = useState(42);
+  const incrementCounter = () => setCounter(counter+1);
   return (
-    <div className="divButton">
-      <button className = "Button" onClick={handleClick}>
-        {counter}
-      </button>
-      </div>
-  );
+    <div>
+      <Counter onclickFunction={incrementCounter} />
+      <Display message={counter} />
+    </div>
+  )
+ 
 }
+
 
 export default App;

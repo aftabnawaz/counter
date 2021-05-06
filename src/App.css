@@ -1,9 +1,14 @@
 .divButton {
   left: 50%;
-  top: 40%;
+  top: 20%;
   position: absolute;
 }
-.Button {
+.divDisplay {
+  left: 50%;
+  top: 30%;
+  position: absolute;
+}
+.counterButton {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
