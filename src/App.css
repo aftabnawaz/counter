@@ -1,6 +1,7 @@
-.App {
-  text-align: center;
-  box-sizing: border-box;
+.divButton {
+  left: 50%;
+  top: 40%;
+  position: absolute;
 }
 .Button {
   background-color: #4CAF50; /* Green */
