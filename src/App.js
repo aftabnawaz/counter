@@ -17,7 +17,7 @@ function Counter(props) {
 }
 function Display(props) {
   return (
-    <div className="divDisplay">
+    <div className='divDisplay'>
       {props.message}
     </div>
   )
